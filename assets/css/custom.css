@@ -1,0 +1,407 @@
+@media (max-width: 1460px) {
+  /* Header */
+  header .header-main .logo {
+    width: 180px;
+  }
+  header .header-main .rightside ul.main-menu li {
+    margin-left: 8px;
+  }
+  header.fixed .header-main .rightside ul.main-menu li {
+    margin-left: 8px;
+    transition: all 0.5s ease;
+  }
+  header.fixed .header-main .rightside ul.main-menu li a {
+    transition: all 0.5s ease;
+  }
+  header.fixed .header-main .logo {
+    width: 170px;
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 1199px) {
+  .video-testimonials {
+    padding: 60px 0;
+  }
+  .video-testimonials .video-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  .banner-block .banner-content h1 {
+    font-size: 72px;
+  }
+  .banner-block .banner-content p {
+    margin: 0 24px 28px 24px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .our-offerings {
+    padding: 60px 0 32px;
+  }
+  .offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .trusted-section {
+    padding: 50px 0;
+  }
+  .brand-pill {
+    height: 72px;
+    min-width: 130px;
+  }
+  #counter .counted-content .number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .header-main .logo a {
+    width: 46px;
+    height: 46px;
+  }
+  header .header-main {
+    padding: 14px 13.5px;
+  }
+  header.fixed .header-main {
+    padding: 10px 13.5px;
+  }
+  header.fixed .header-main {
+    padding: 16px 13.5px;
+  }
+  header .header-main .logo-area {
+    padding: 0 15px 0 0;
+    align-items: center;
+  }
+  header .header-main .rightside {
+    display: none;
+  }
+  header .header-main .logo {
+    width: 140px;
+  }
+  .btn-menu {
+    display: block;
+  }
+  header.fixed {
+    top: 0px;
+  }
+  header.fixed .header-main .logo {
+    width: 140px;
+  }
+  header .header-main .rightside {
+    display: flex;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    gap: 10px;
+    background: #fff;
+    width: 100%;
+    left: 100%;
+    padding: 10px 0px;
+    transition: 0.5s;
+    height: 100vh;
+    align-items: start;
+  }
+  header .header-main .rightside.show {
+    display: flex;
+    left: 0;
+    transition: 0.5s;
+  }
+  header .header-main .rightside.show .btn-read {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 13px 5px;
+    min-width: 149px;
+    margin: 0 0 0 18px;
+  }
+  header.fixed .header-main .rightside.show {
+    top: 78px;
+  }
+  header .header-main .rightside ul.main-menu {
+    flex-direction: column;
+  }
+  header.fixed .header-main .rightside.show .btn-read {
+    margin: 0 0 0 13px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  .video-testimonials {
+    padding: 40px 0;
+  }
+  .video-testimonials .video-head h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .video-testimonials .video-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .video-testimonials .meta .name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .video-testimonials .meta .sub {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .video-testimonials .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .banner-block {
+    height: 80vh;
+  }
+  .banner-block .banner-content {
+    padding: 80px 16px 0 16px;
+  }
+  .banner-block .banner-content h5 {
+    font-size: 22px;
+  }
+  .banner-block .banner-content h1 {
+    font-size: 52px;
+  }
+  .banner-block .banner-content p {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .banner-bottom {
+    margin-top: 28px;
+  }
+  .our-offerings {
+    padding: 48px 0 28px;
+  }
+  .offering-card {
+    min-height: 300px;
+  }
+  .trusted-section .trusted-head p {
+    font-size: 16px;
+  }
+  .brand-pill {
+    height: 64px;
+    min-width: 120px;
+  }
+  #counter {
+    margin-top: 40px;
+  }
+  .counted-content .number {
+    font-size: 38px;
+  }
+  .faq-page .accordion {
+    width: 90%;
+  }
+  .contact-page {
+    padding: 48px 0;
+  }
+  .contact-page .get-in-touch {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+/* Refine mobile menu colors on white panel */
+@media (max-width: 991px) {
+  header .header-main .rightside ul.main-menu li a {
+    color: #0b0b0b;
+  }
+}
+
+@media (max-width: 1024px) {
+  .offerings-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 28px;
+    margin: 0 0 14px 0;
+  }
+  .banner-block {
+    height: 70vh;
+  }
+  .banner-block .banner-content {
+    padding: 70px 14px 0 14px;
+  }
+  .banner-block .banner-content h5 {
+    font-size: 18px;
+  }
+  .banner-block .banner-content h1 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+  .banner-block .banner-content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 12px 0;
+  }
+  .banner-block .btn-read {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  .banner-bottom {
+    margin-top: 22px;
+  }
+
+  .our-offerings .offerings-head {
+    margin-bottom: 34px;
+  }
+  .our-offerings .offerings-head p {
+    font-size: 14px;
+  }
+  .our-offerings {
+    padding: 36px 0 20px;
+  }
+  .offerings-grid {
+    gap: 16px;
+  }
+  .offering-card .card-content {
+    padding: 20px;
+  }
+  .offering-card .card-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 14px;
+  }
+  .offering-card h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+  }
+  .offering-card p {
+    font-size: 14px;
+    margin: 0 0 14px;
+  }
+  .offering-card .card-list li {
+    margin-bottom: 4px;
+  }
+  .offerings-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .trusted-section {
+    padding: 40px 0;
+  }
+  .trusted-section .trusted-head p {
+    font-size: 14px;
+  }
+  .trusted-section .trusted-head {
+    margin: 0 0 20px;
+  }
+
+  .brand-logs {
+    padding: 6px 0;
+  }
+  .brand-pill {
+    height: 56px;
+    min-width: 110px;
+    margin: 0 10px;
+  }
+  .counted-content .number {
+    font-size: 32px;
+  }
+  .counted-content p {
+    font-size: 14px;
+  }
+
+  .video-testimonials .video-card {
+    height: auto;
+  }
+  .video-testimonials .video-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .video-testimonials .video-card {
+    height: 300px;
+  }
+
+  .faq-page {
+    padding: 40px 0;
+  }
+  .faq-page .accordion {
+    width: 100%;
+  }
+  .faq-page p {
+    font-size: 14px;
+  }
+  .faq-page .faq-page-titel {
+    margin-bottom: 24px;
+  }
+  .faq-page .accordion .accordion-button {
+    font-size: 14px;
+    padding: 14px 19px;
+    line-height: 22px;
+  }
+  .contact-page .contact-head p {
+    font-size: 14px;
+  }
+
+  .contact-page .get-in-touch {
+    padding: 20px;
+  }
+  .contact-page .custom-contact-form {
+    padding: 20px;
+  }
+  .contact-page .get-in-touch h3 {
+    margin: 0 0 14px;
+    font-size: 20px;
+  }
+  .contact-page .get-in-touch .icon-block {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .contact-page .get-in-touch .info strong {
+    font-size: 14px;
+  }
+  .contact-page .get-in-touch .info {
+    font-size: 14px;
+  }
+  .contact-page .get-in-touch-info {
+    padding: 18px;
+  }
+
+  .contact-page {
+    padding: 40px 0;
+  }
+  .contact-page .form-submit svg {
+    left: 14px;
+  }
+  .contact-page .wpcf7-submit {
+    padding: 10px 16px;
+  }
+  .contact-page .form-submit .wpcf7-submit {
+    padding-left: 40px;
+  }
+
+  .whatsapp-help .icon {
+    background: #25d366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 41px;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* Small phones */
+@media (max-width: 575px) {
+  .banner-block .banner-content h1 {
+    font-size: 32px;
+  }
+  .offerings-grid {
+    gap: 14px;
+  }
+  .brand-pill {
+    height: 52px;
+    min-width: 100px;
+    padding: 10px;
+  }
+}
