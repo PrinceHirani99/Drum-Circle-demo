@@ -39,7 +39,7 @@
     line-height: 26px;
   }
   .our-offerings {
-    padding: 60px 0 32px;
+    padding: 60px 0 68x;
   }
   .offerings-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -175,7 +175,7 @@
     margin-top: 28px;
   }
   .our-offerings {
-    padding: 48px 0 28px;
+    padding: 48px 0 68px;
   }
   .offering-card {
     min-height: 300px;
@@ -257,7 +257,7 @@
     font-size: 14px;
   }
   .our-offerings {
-    padding: 36px 0 20px;
+    padding: 36px 0 68px;
   }
   .offerings-grid {
     gap: 16px;
@@ -389,7 +389,21 @@
     font-size: 24px;
     text-align: center;
   }
+  .offerings-carousel .owl-nav button { width: 40px; height: 40px; margin: 0  !important;}
+  .play-button { top: 55px; right: 0px; width: 40px; height: 40px;   border: 1px solid #fff;}
+  .play-button svg { width: 20px; }
+
+  .video-wrapper .play-button {
+    top: 40px;
+    left: 40px;
+    width: 50px;
+    height: 50px;
+        border: 1px solid #fff;
 }
+
+
+}
+
 
 /* Small phones */
 @media (max-width: 575px) {
