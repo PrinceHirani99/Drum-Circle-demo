@@ -17,6 +17,7 @@
 
 /* Owl Carousel Custom Navigation */
 .offerings-carousel .owl-nav {
+  display:none;
     position: absolute;
     top: auto;
     transform: translateY(-50%);
