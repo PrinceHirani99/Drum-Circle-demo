@@ -17,7 +17,7 @@
 
 /* Owl Carousel Custom Navigation */
 .offerings-carousel .owl-nav {
-  display:none;
+  
     position: absolute;
     top: auto;
     transform: translateY(-50%);
@@ -27,6 +27,7 @@
     padding: 0;
     pointer-events: none;
     bottom: -80px;
+  display:none;
 }
 
 .offerings-carousel .owl-nav button {
