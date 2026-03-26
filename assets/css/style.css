@@ -15,6 +15,240 @@
   --font-inter: "Inter", sans-serif;
 }
 
+/* Owl Carousel Custom Navigation */
+.offerings-carousel .owl-nav {
+    position: absolute;
+    top: auto;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    pointer-events: none;
+    bottom: -80px;
+}
+
+.offerings-carousel .owl-nav button {
+  width: 50px;
+  height: 50px;
+  background: var(--main-color) !important;
+  border-radius: 50% !important;
+  border: 2px solid #fff;
+  color: #fff !important;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: all;
+  box-shadow: 0 4px 15px rgba(185, 55, 57, 0.3);
+}
+
+.offerings-carousel .owl-nav button:hover {
+  background: #8a292b !important;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(185, 55, 57, 0.4);
+}
+
+.offerings-carousel .owl-nav button.owl-prev {
+  left: -25px;
+}
+
+.offerings-carousel .owl-nav button.owl-next {
+  right: -25px;
+}
+
+.offerings-carousel .owl-nav button span {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* Video Testimonials Thumbnail and Play Button Styles */
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-wrapper .video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-wrapper.playing .video-thumbnail {
+  opacity: 0;
+}
+
+.video-wrapper.playing video {
+  opacity: 1;
+}
+
+/* Keep video caption always visible */
+.video-caption {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide caption when video is playing */
+.video-wrapper.playing ~ .video-caption {
+  opacity: 0;
+}
+
+/* Video testimonials play button always visible */
+.video-wrapper .play-button {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Video testimonials hover effect */
+.video-wrapper:hover .video-thumbnail {
+  opacity: 0.7;
+  filter: brightness(0.8);
+}
+
+.video-wrapper:hover .play-button {
+  opacity: 1;
+  background: #ff6b6b;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.video-wrapper:hover .video-overlay {
+  background: linear-gradient(45deg, rgba(255, 107, 107, 0.3), rgba(255, 107, 107, 0.1));
+}
+
+/* Video testimonials play button positioning */
+.video-wrapper .play-button {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  background: var(--main-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Pause icon styles */
+.video-wrapper.playing .play-button svg polygon {
+  display: none;
+}
+
+.video-wrapper.playing .play-button::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+/* Video testimonials click feedback effect */
+.video-wrapper.clicked {
+  transform: scale(0.98);
+  filter: brightness(1.1);
+}
+
+.video-wrapper.clicked .play-button {
+  background: #ff4757;
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 0 8px 25px rgba(255, 71, 87, 0.5);
+}
+
+.video-wrapper.clicked .video-overlay {
+  background: rgba(255, 71, 87, 0.2);
+}
+
+
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+.play-button {
+    position: absolute;
+    top: 72px;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    background: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+    opacity: 1;
+} 
+
+.play-button:hover {
+  background: #8a292b;
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.play-button svg {
+  color: #fff;
+  margin-left: 3px;
+}
+
+
+
+
 html,
 body {
   font-weight: 400;
@@ -548,9 +782,8 @@ h2 span {
 }
 .offering-card:hover {
   border-color: #ffffff33;
-  transform: translateY(-8px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  background: #0b0b0b;
+  /* background: #0b0b0b; */
 }
 .offering-card:hover .bg-video {
   opacity: 0.2;
@@ -586,7 +819,6 @@ h2 span {
   transform: translateY(0);
   opacity: 1;
 }
-
 @media (max-width: 991px) {
   .offerings-grid {
     grid-template-columns: 1fr;
@@ -841,6 +1073,7 @@ h2 span {
 .video-testimonials .video-wrapper {
   position: relative;
   width: 100%;
+  height: 100%;
   background: #000;
 }
 .video-testimonials .video-wrapper::before {
@@ -856,14 +1089,13 @@ h2 span {
   object-fit: cover;
 }
 .video-testimonials .video-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.05) 10%,
-    rgba(0, 0, 0, 0.4) 55%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
+    position: absolute;
+    height: 100%;
+    inset: 0;
+    left: 0;
+    background: rgb(0 0 0 / 46%);
+    top: 0;
+    z-index: 11;
 }
 .video-testimonials .video-caption {
   position: absolute;
@@ -873,6 +1105,7 @@ h2 span {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  z-index: 1111;
 }
 .video-testimonials .video-caption .name {
   font-weight: 700;
@@ -1165,4 +1398,8 @@ h2 span {
   line-height: 49px;
   font-size: 30px;
   text-align: center;
+}
+.offering-card .card-icon {
+    font-size: 40px;
+    font-weight: 600;
 }
